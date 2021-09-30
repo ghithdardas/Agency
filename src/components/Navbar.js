@@ -7,9 +7,14 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   padding: 10px 20px;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
+  border: 2px solid crimson;
+  width: 97%;
+  background-color: crimson;
 `
 
 const Left = styled.div`
@@ -17,6 +22,7 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 `
 
 const Menu = styled.ul`
@@ -56,15 +62,53 @@ const Navbar = () => {
         <Left>
           <Logo>Agency</Logo>
           <Menu>
-            <MenuItem>Home</MenuItem>
-            <MenuItem>Features</MenuItem>
-            <MenuItem>Services</MenuItem>
-            <MenuItem>Pricing</MenuItem>
-            <MenuItem>Contact</MenuItem>
+            <MenuItem>
+              <a href='#' style={{ textDecoration: 'none', color: 'white' }}>
+                Home
+              </a>
+            </MenuItem>
+
+            <MenuItem>
+              <a
+                href='#feature'
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
+                Features
+              </a>
+            </MenuItem>
+
+            <MenuItem>
+              <a
+                href='#service'
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
+                Services
+              </a>
+            </MenuItem>
+
+            <MenuItem>
+              <a
+                href='#price'
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
+                Pricing
+              </a>
+            </MenuItem>
+
+            <MenuItem>
+              <a
+                href='#contact'
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
+                Contact
+              </a>
+            </MenuItem>
           </Menu>
         </Left>
 
-        <Button>JOIN TODAY</Button>
+        <a href='SignUp.html'>
+          <Button>JOIN TODAY</Button>
+        </a>
       </Wrapper>
     </Container>
   )

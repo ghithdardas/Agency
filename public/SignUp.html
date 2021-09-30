@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: url('https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-outline.png');
+            height: 705px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        form :not(label){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        input{
+            margin-top: 5px;
+            padding: 10px;
+            width: 350px;
+            height: 30px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid ;
+        }
+        ::placeholder{
+            font-size: 15px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 22px;
+            color: rgb(78, 62, 62);
+        }
+        h1{
+            margin-top: 0;
+            color: crimson;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        button {
+            margin-top: 10px;
+            margin-left: 120px;
+            border: none;
+            background-color: #2471a3;
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            justify-content: center;
+            display: flex;
+        }
+        #h {
+            color:crimson;
+            background: none;
+            border-radius: 5px;
+            border: 2px solid crimson;
+            font-size:20px;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href='index.html'>
+        <button id='h'>Back To Homepage</button>
+        </a>
+            
+    <form>
+        <h1>Sign Up Now!!</h1>
+        <label>FIRST NAME</label>
+        <input placeholder="First Name"></input>
+        <label>LAST NAME</label>
+        <input placeholder="Last Name"></input>
+        <label>Email</label>
+        <input placeholder="Email"></input>
+        <button>sign up</button>
+      </form>
+    </div>
+</body>
+</html>

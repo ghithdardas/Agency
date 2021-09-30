@@ -49,19 +49,19 @@ const App = () => {
         <Intro />
         <IntroShape />
       </Container>
-      <Container>
+      <Container id='feature'>
         <Feature />
         <FeatureShape />
       </Container>
-      <Container>
+      <Container id='service'>
         <Service />
         <ServiceShape />
       </Container>
-      <Container>
+      <Container id='price'>
         <Price />
         <PriceShape />
       </Container>
-      <Container>
+      <Container id='contact'>
         <Contact />
         <Footer />
       </Container>
